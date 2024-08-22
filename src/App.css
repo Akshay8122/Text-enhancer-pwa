@@ -13,26 +13,107 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textAreaContainer {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+}
+
+.textArea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.clearButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resultContainer {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.subHeader {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.resultText {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.synonymsContainer {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.synonymsList {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.synonymItem {
+  font-size: 1rem;
+  color: #007bff;
+  margin-bottom: 5px;
 }
